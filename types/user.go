@@ -7,7 +7,7 @@ type User struct {
 
 type GetUserResponse struct {
 	*ApiResponse
-	*User
+	Users []*User `json:"result"`
 }
 
 type CreateUserResponse struct {
